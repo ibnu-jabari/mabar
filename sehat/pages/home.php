@@ -39,33 +39,31 @@
         </div>
     </div>
     <section>
-    
-        <div class='container'>
-            <div class="bagi">
-                <div class="container-box">
-                    <h2>Halo <?php
-                        echo $baris_identitas['nama'];
-                    ?>!</h2>
-                </div>
-                <div class="container-box">
-                    <h2>Indeks Massa Tubuh (IMT)</h2>
-                    <a href="bmiCek.php">Cek</a>
-                    <a href="bmi.php">Hasil</a>
-                </div>
+    <div class='container'>
+        <!-- Tulisan Halo -->
+        <div class="header-container">
+            <h2 class="nyapa">Halo <?php echo $baris_identitas['nama']; ?>!</h2>
+            <img src="../assets/logo.png" alt="Logo" class="logo-utama">
+        </div>
+        <h3>Hal-Hal yang bisa kamu lakukan: </h3>
+        
+        <div class="box-row">
+            <div class="container-imt">
+                <h2>Indeks Massa Tubuh (IMT)</h2>
+                <a href="bmiCek.php">Cek</a>
+                <button class="btn1"><a href="bmi.php">Hasil</a></button>
             </div>
-            <div class="bagi">
-                <div class="container-box">
-                    <h2>Depresi</h2>
-                    <a href="mentalTest.php">Cek</a>
-                    <a href="mental.php">Hasil</a>
-                </div>
-                <div class="container-box">
-                    <h2>Diabetes</h2>
-                    <a href="diabetesTest.php">Test</a>
-                    <a href="diabetes.php">Hasil</a>
-                </div>
+            <div class="container-depresi">
+                <h2>Depresi</h2>
+                <a href="mentalTest.php">Cek</a>
+                <button class="btn2"><a href="mental.php">Hasil</a></button>
             </div>
-        <br>
+            <div class="container-diabet">
+                <h2>Diabetes</h2>
+                <a href="diabetesTest.php">Cek</a>
+                <button class="btn3"><a href="diabetes.php">Hasil</a></button>
+            </div>
+        </div>
     </div>
 </section>
 </body>
